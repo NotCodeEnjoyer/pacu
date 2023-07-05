@@ -7,7 +7,7 @@ This is fork project's https://github.com/thirdbyte/pacu with updates:
 
 ## Quick Way (Pull Docker Images) / For Ubuntu 20.04 LTS (AWS) Only
 
-### Install
+### Install (old version)
 
 ```
 curl -sSL raw.githubusercontent.com/thirdbyte/pacu/main/init.sh | bash
@@ -24,7 +24,7 @@ curl -sSL bit.ly/3haQKqI | bash
 pacu
 ```
 
-## Manual Way (Build Docker Images)
+## Manual Way (Build Docker Images  with updates) 
 
 ### Install
 ```
