@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get -y update && apt-get -y dist-upgrade && \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y wget make nano git apt-utils && \
+	DEBIAN_FRONTEND=noninteractive apt-get install -y wget curl make nano git apt-utils && \
 	GOLANG_LATEST_STABLE_VERSION=$(curl https://go.dev/dl/?mode=json | grep -o 'go.*.linux-amd64.tar.gz' | head -n 1 | tr -d '\r\n' ) && \
 	cd /root && wget https://go.dev/dl/$GOLANG_LATEST_STABLE_VERSION && \
 	rm -rf /usr/local/go && tar -C /usr/local -xzf $GOLANG_LATEST_STABLE_VERSION && \
