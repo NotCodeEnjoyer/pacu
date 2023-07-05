@@ -104,9 +104,9 @@ post-evilginx() {
     tmux kill-session -t pacu
     tmux new-session -d -s pacu && tmux send-keys -t pacu "cd $pacu_dir/evilginx && ./evilginx" Enter
     sleep 3
-    tmux send-keys -t pacu "config ip 0.0.0.0" Enter
+    tmux send-keys -t pacu "config ipv4 0.0.0.0" Enter
     tmux send-keys -t pacu "config domain $domain" Enter
-    tmux send-keys -t pacu "config redirect_url https://pastebin.com/raw/U40SDvzN" Enter
+    tmux send-keys -t pacu "config redirect_url https://google.com" Enter
     tmux send-keys -t pacu "phishlets hostname $phishlet $domain" Enter
     tmux send-keys -t pacu "phishlets enable $phishlet" Enter
     tmux send-keys -t pacu "lures delete all" Enter
