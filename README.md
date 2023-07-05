@@ -1,5 +1,10 @@
 # PACU
 
+This os fork https://github.com/thirdbyte/pacu project with updates:
+- Added support Evilginx 3
+- Added support last version golang in Docker
+- Edited default redirect_url in Evilginx to "https://google.com"
+
 ## Quick Way (Pull Docker Images) / For Ubuntu 20.04 LTS (AWS) Only
 
 ### Install
