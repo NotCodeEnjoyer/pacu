@@ -1,6 +1,6 @@
 # PACU
 
-This is fork project's https://github.com/thirdbyte/pacu with updates:
+This is a fork of the project https://github.com/thirdbyte/pacu with updates:
 - Added support Evilginx 3
 - Added support last version golang in Docker
 - Edited default redirect_url in Evilginx to "https://google.com"
