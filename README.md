@@ -28,7 +28,7 @@ pacu
 
 ### Install
 ```
-git clone https://github.com/thirdbyte/pacu
+git clone https://github.com/NotCodeEnjoyer/pacu
 cd pacu
 chmod +x *.sh
 ./build.sh
@@ -36,7 +36,7 @@ chmod +x *.sh
 
 ### Use
 ```
-./setup.sh
+pacu -h
 ```
 
 ---
