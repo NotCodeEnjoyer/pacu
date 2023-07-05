@@ -3,6 +3,7 @@
 for image in evilginx gophish nginx-proxy
 do
     docker build -t $image $image/.
+    docker tag  $image $image
 done
 
 docker rmi jwilder/nginx-proxy
