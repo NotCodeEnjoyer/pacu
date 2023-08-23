@@ -8,6 +8,7 @@ fi
 pacu_dir=/opt/pacu
 
 function usage {
+    echo "Directory path for phislets /opt/pacu/evilginx/phishlets/">&2
     echo "Usage: $0 -d example.org -p github           # Initializes Evilginx2" >&2
     echo "       $0 -d example.org -g url              # Initializes GoPhish" >&2
     echo "       $0 -d example.org -p github -g url    # Initializes Evilginx2 with GoPhish"
