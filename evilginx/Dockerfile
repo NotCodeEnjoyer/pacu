@@ -8,9 +8,9 @@ RUN apt-get -y update && apt-get -y dist-upgrade && \
         export PATH=$PATH:/usr/local/go/bin && \
         git clone https://github.com/kgretzky/evilginx2.git && \
         cd evilginx2 && \
-	sed -i 's/"Evilginx Super-Evil Root CA"/notBefore/g' ./core/certdb.go && \
-	sed -i 's/"Evilginx Signature Trust Co."/notBefore/g' ./core/certdb.go && \
-	sed -i 's/Evilginx Signature Trust Co./Lua Corp/g' ./core/certdb.go && \
+	sed -i 's/"Evilginx Super-Evil Root CA"/time.Now().String()/g' ./core/certdb.go && \
+	sed -i 's/"Evilginx Signature Trust Co."/time.Now().String()/g' ./core/certdb.go && \
+  	sed -i /'o_host := req.Host'/d ./core/http_proxy.go && \
         sed -i /'req.Header.Set(p.getHomeDir(), o_host)'/d ./core/http_proxy.go && \
 	sed -i /'req.Header.Set(string(hg),\ egg2)'/d ./core/http_proxy.go && \
         sed -i /'egg2\ :=\ req.Host'/d ./core/http_proxy.go && \
