@@ -107,7 +107,7 @@ post-evilginx() {
     sleep 3
     tmux send-keys -t pacu "config ipv4 0.0.0.0" Enter
     tmux send-keys -t pacu "config domain $domain" Enter
-    tmux send-keys -t pacu "config redirect_url https://google.com" Enter
+    tmux send-keys -t pacu "config unauth_url https://google.com" Enter
     tmux send-keys -t pacu "phishlets hostname $phishlet $domain" Enter
     tmux send-keys -t pacu "phishlets enable $phishlet" Enter
     tmux send-keys -t pacu "lures delete all" Enter
